@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal'S Shop </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</head>
+
+<body>
+    <h1> CARWOW SHOP </h1>
+
+
+
+    <div id="cart">
+        <h2>BASKET</h2>
+        <ul id="cart-items"></ul>
+        <p>Total : <span id="total-price">0.00</span>DT</p>
+        <button id="clear-cart">Clear basket</button>
+        <button id="place-order">shop now</button>
+
+
+      </div>
+
+      <div id="store">
+        <h2>STORE</h2>
+        <ul id="item-list">
+          <li>
+            <h3>Tiger</h3>
+            <img src="animal5.jpg" alt="Carwow" width="15%" >
+            <p>Prix : 250 DT </p>
+
+            <button class="add-to-cart" data-name="carwow" data-price="10">add to basket</button>
+          </li>
+          <li>
+            <h3>Cats</h3>
+            <img src="animal4.jpg" alt="carwow" width="25%" >
+            <p>Prix : 300 DT </p>
+            <button class="add-to-cart" data-name="Liquide" data-price="15">add to basket</button>
+          </li>
+          <li>
+            <h3>Dogs</h3>
+            <img src="animal1.jpg" alt="Carwow" width="25%" >
+            <p>Prix : 350 DT </p>
+            <button class="add-to-cart" data-name="Meche" data-price="20">add to basket</button>
+          </li>
+        </ul>
+      </div>
+<form id="myForm" action="#" method="post">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Sujet:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="sticky-top">UP</div>
+
+    <div>
+        <button id="scroll-to-top-button" onclick="scrollToTop()" > UP </button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
